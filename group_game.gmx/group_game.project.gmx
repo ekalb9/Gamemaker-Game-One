@@ -24,6 +24,7 @@
     <sprite>sprites\spr_pconcept1</sprite>
     <sprite>sprites\spr_bullet2</sprite>
     <sprite>sprites\spr_flash</sprite>
+    <sprite>sprites\spr_hearts</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -41,6 +42,7 @@
     <object>objects\obj_armpiv2</object>
     <object>objects\obj_camera</object>
     <object>objects\obj_flash</object>
+    <object>objects\obj_hearts</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
