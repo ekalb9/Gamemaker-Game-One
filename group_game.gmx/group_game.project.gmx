@@ -22,12 +22,8 @@
     <sprite>sprites\spr_pelletdie</sprite>
     <sprite>sprites\spr_ak47</sprite>
     <sprite>sprites\spr_pconcept1</sprite>
-<<<<<<< HEAD
     <sprite>sprites\spr_bullet2</sprite>
     <sprite>sprites\spr_flash</sprite>
-=======
-    <sprite>sprites\spr_hearts</sprite>
->>>>>>> 5b17baa3c941bfddd916c63792f8486b2c5da714
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -44,11 +40,7 @@
     <object>objects\obj_armpiv1</object>
     <object>objects\obj_armpiv2</object>
     <object>objects\obj_camera</object>
-<<<<<<< HEAD
     <object>objects\obj_flash</object>
-=======
-    <object>objects\obj_heart</object>
->>>>>>> 5b17baa3c941bfddd916c63792f8486b2c5da714
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
