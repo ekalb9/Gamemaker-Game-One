@@ -25,6 +25,7 @@
     <sprite>sprites\spr_bullet2</sprite>
     <sprite>sprites\spr_flash</sprite>
     <sprite>sprites\spr_hearts</sprite>
+    <sprite>sprites\spr_spark</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
