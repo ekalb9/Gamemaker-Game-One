@@ -98,6 +98,7 @@
     <instance objName="obj_armpiv2" x="192" y="64" name="inst_DFA0D87C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_camera" x="288" y="96" name="inst_7A4CB02E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gun2" x="480" y="96" name="inst_875DEDA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hearts" x="128" y="160" name="inst_F9C353D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
