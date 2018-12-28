@@ -25,8 +25,13 @@ else
 released = true
 time = 0
 
-obj_player.xspd -= lengthdir_x(push,image_angle)
-obj_player.vsp -= lengthdir_y(push,image_angle)
+obj_player.push = push
+obj_player.pushdir = image_angle
+
+with obj_player
+{
+
+}
 
 
 }

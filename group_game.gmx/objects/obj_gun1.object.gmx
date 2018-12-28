@@ -39,13 +39,13 @@ released = true
 canshoot = true
 shoot_type = scr_shootbullet
 sprite = spr_gun
-shake = 1
+shake = 4
 spd_variation = 4
 sound = snd_powerfulshot
 recoil_distance = 5
 recoil_offset = 0
 flashtype = obj_flash
-push = 5
+push = 15
 </string>
           </argument>
         </arguments>

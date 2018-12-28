@@ -38,10 +38,9 @@ hsp = 1
 vsp = 1
 dir = 0
 xspd = 0
-frick = 1.1
+frick = 1
 //Combat variables
-
-
+global.hp = 2
 </string>
           </argument>
         </arguments>
@@ -71,19 +70,12 @@ if place_meeting(x,y+1,obj_wall) and keyboard_check_pressed(keyJump)
 vsp -= jump
  
 //Set vertical and horizontal speed
-hsp = spd * dir + xspd
+hsp = spd * dir
 vsp += (grav * !place_meeting(x,y + 1,obj_wall))
 
-//Check for vertical collisions
-if place_meeting(x,y+vsp,obj_wall)
-{
-while(!place_meeting(x,y + sign(vsp),obj_wall))
- {
- y+=0.1*sign(vsp)
- }
-xspd += (-xspd)/frick
-vsp = 0
-}
+//Set friction
+//hsp += (-hsp)/frick
+
 //Check for horizontal collisions
 if place_meeting(x + hsp,y,obj_wall) 
 {
@@ -108,7 +100,7 @@ hsp=0
 //Increment the current x and y coords by the vertical and horizontal speed
 x+=hsp
 y+=vsp
-
+//END HSPEED AND VSPEED COLLISION
 //Flip the image based on the mouse location
 if mouse_x &gt; x
 image_xscale = 1

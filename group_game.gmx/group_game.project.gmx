@@ -24,6 +24,8 @@
     <sprite>sprites\spr_pconcept1</sprite>
     <sprite>sprites\spr_bullet2</sprite>
     <sprite>sprites\spr_flash</sprite>
+    <sprite>sprites\spr_casing</sprite>
+    <sprite>sprites\spr_shell</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
