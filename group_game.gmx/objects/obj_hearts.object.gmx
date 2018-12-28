@@ -48,11 +48,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-x = view_xview + 60
+            <string>x = view_xview + 60
 y = view_yview + 20
-
-
 image_index = global.hp
 </string>
           </argument>
