@@ -37,10 +37,10 @@ keyRight = ord("D")
 hsp = 1
 vsp = 1
 dir = 0
+xspd = 0
+frick = 5
 //Combat variables
-//Health
 global.hp = 6
-
 </string>
           </argument>
         </arguments>
