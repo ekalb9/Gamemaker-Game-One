@@ -3,7 +3,7 @@
   <spriteName>spr_hearts</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-100</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -48,15 +48,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>dir = point_direction(obj_player.x,obj_player.y,obj_camera.x,obj_camera.y)
-if obj_player.x &lt; obj_camera.x {
-    x = obj_camera.x-view_xview
-    y = obj_camera.y-view_yview
-    }
-else{
-    x=obj_camera.x-view_xview
-    y=obj_camera.y-view_yview
-    }
+            <string>
+x = view_xview + 60
+y = view_yview + 20
+
 
 image_index = global.hp
 </string>
