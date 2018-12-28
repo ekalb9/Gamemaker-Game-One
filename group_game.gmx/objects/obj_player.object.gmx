@@ -37,6 +37,8 @@ keyRight = ord("D")
 hsp = 1
 vsp = 1
 dir = 0
+xspd = 0
+frick = 1.1
 //Combat variables
 
 
@@ -69,7 +71,7 @@ if place_meeting(x,y+1,obj_wall) and keyboard_check_pressed(keyJump)
 vsp -= jump
  
 //Set vertical and horizontal speed
-hsp = spd * dir
+hsp = spd * dir + xspd
 vsp += (grav * !place_meeting(x,y + 1,obj_wall))
 
 //Check for vertical collisions
@@ -79,6 +81,7 @@ while(!place_meeting(x,y + sign(vsp),obj_wall))
  {
  y+=0.1*sign(vsp)
  }
+xspd += (-xspd)/frick
 vsp = 0
 }
 //Check for horizontal collisions
@@ -104,7 +107,7 @@ hsp=0
  
 //Increment the current x and y coords by the vertical and horizontal speed
 x+=hsp
-y+=vsp 
+y+=vsp
 
 //Flip the image based on the mouse location
 if mouse_x &gt; x

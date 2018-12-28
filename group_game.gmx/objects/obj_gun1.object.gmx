@@ -31,8 +31,7 @@ firerate = 10
 spread = 0.15
 automatic = false
 length = 5
-offsetx = 0
-offsety = 7
+offset = 0
 bullettype = obj_pellet
 bulletspeed = 26
 shotcount = 60
@@ -46,6 +45,7 @@ sound = snd_powerfulshot
 recoil_distance = 5
 recoil_offset = 0
 flashtype = obj_flash
+push = 5
 </string>
           </argument>
         </arguments>

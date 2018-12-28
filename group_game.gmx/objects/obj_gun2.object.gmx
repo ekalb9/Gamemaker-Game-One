@@ -31,8 +31,7 @@ firerate = 6
 spread = 3
 automatic = true
 length = 5
-offsetx = 0
-offsety = 7
+offset = 0
 bullettype = obj_bullet
 bulletspeed = 15
 shotcount = 1
@@ -47,6 +46,7 @@ recoil_distance = 4
 recoil_offset = 0
 time = 0
 flashtype = obj_flash
+push = 5
 </string>
           </argument>
         </arguments>

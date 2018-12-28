@@ -2,8 +2,8 @@ if canshoot = true and released = true
 {
 for (i = 0; i < shotcount; i++)
 {
-b = instance_create(x+lengthdir_x(offsetx,image_angle),y+lengthdir_y(offsety,image_angle),bullettype)
-f = instance_create(x+lengthdir_x(offsetx+16,image_angle),y+lengthdir_y(offsety+16,image_angle),flashtype)
+b = instance_create(x+lengthdir_x(offset,image_angle),y+lengthdir_y(offset,image_angle),bullettype)
+f = instance_create(x+lengthdir_x(offset+16,image_angle),y+lengthdir_y(offset+16,image_angle),flashtype)
 f.depth = depth
 b.image_angle = image_angle + random_range(-spread *i,spread * i)
 b.spd = bulletspeed
@@ -24,6 +24,9 @@ released = false
 else
 released = true
 time = 0
+
+obj_player.xspd -= lengthdir_x(push,image_angle)
+obj_player.vsp -= lengthdir_y(push,image_angle)
 
 
 }
