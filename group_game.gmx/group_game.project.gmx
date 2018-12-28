@@ -5,7 +5,9 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\sound_shot</sound>
+    <sound>sound\snd_akshot</sound>
+    <sound>sound\snd_shot</sound>
+    <sound>sound\snd_powerfulshot</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_wall</sprite>
@@ -15,10 +17,13 @@
     <sprite>sprites\spr_grapplegun</sprite>
     <sprite>sprites\spr_hook</sprite>
     <sprite>sprites\spr_bullet</sprite>
+    <sprite>sprites\spr_bulletdie</sprite>
     <sprite>sprites\spr_pellet</sprite>
     <sprite>sprites\spr_pelletdie</sprite>
     <sprite>sprites\spr_ak47</sprite>
     <sprite>sprites\spr_pconcept1</sprite>
+    <sprite>sprites\spr_bullet2</sprite>
+    <sprite>sprites\spr_flash</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -35,6 +40,7 @@
     <object>objects\obj_armpiv1</object>
     <object>objects\obj_armpiv2</object>
     <object>objects\obj_camera</object>
+    <object>objects\obj_flash</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

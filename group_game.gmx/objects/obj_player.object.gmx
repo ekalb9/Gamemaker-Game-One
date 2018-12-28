@@ -116,14 +116,14 @@ image_xscale = -1
 obj_armpiv1.x = obj_player.x + obj_armpiv1.offset*obj_player.image_xscale
 obj_armpiv1.y = obj_player.y
 
-obj_gun1.x = obj_armpiv1.x
-obj_gun1.y = obj_armpiv1.y
+obj_gun1.x = obj_armpiv1.x + lengthdir_x(obj_gun1.recoil_offset,obj_gun1.image_angle)
+obj_gun1.y = obj_armpiv1.y + lengthdir_y(obj_gun1.recoil_offset,obj_gun1.image_angle)
 
 obj_armpiv2.x = obj_player.x - obj_armpiv2.offset*obj_player.image_xscale
 obj_armpiv2.y = obj_player.y
 
-obj_gun2.x = obj_armpiv2.x
-obj_gun2.y = obj_armpiv2.y
+obj_gun2.x = obj_armpiv2.x + lengthdir_x(obj_gun2.recoil_offset,obj_gun2.image_angle)
+obj_gun2.y = obj_armpiv2.y + lengthdir_y(obj_gun2.recoil_offset,obj_gun2.image_angle)
 
 
 

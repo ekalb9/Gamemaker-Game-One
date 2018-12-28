@@ -27,11 +27,12 @@
             <kind>1</kind>
             <string>//Combat variables
 damage = 10
-firerate = 5
+firerate = 6
 spread = 3
 automatic = true
 length = 5
-offset = 16
+offsetx = 0
+offsety = 7
 bullettype = obj_bullet
 bulletspeed = 15
 shotcount = 1
@@ -41,6 +42,11 @@ shoot_type = scr_shootbullet
 sprite = spr_gun
 shake = 0.5
 spd_variation = 1
+sound = snd_akshot
+recoil_distance = 4
+recoil_offset = 0
+time = 0
+flashtype = obj_flash
 </string>
           </argument>
         </arguments>
@@ -64,6 +70,7 @@ spd_variation = 1
           <argument>
             <kind>1</kind>
             <string>canshoot = true
+recoil_offset = 0
 </string>
           </argument>
         </arguments>
@@ -90,6 +97,21 @@ spd_variation = 1
 image_angle = point_direction(x,y,mouse_x,mouse_y)
 
 image_yscale = obj_player.image_xscale
+
+
+if canshoot = false
+{
+if time &lt; firerate/2
+recoil_offset = -recoil_distance
+else if time &gt;= firerate/2
+recoil_offset+=0.8
+time+=1
+recoil_offset = clamp(recoil_offset,-recoil_distance,0)
+}
+else 
+{
+recoil_offset = 0
+}
 </string>
           </argument>
         </arguments>
