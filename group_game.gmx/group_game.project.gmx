@@ -19,6 +19,7 @@
     <sprite>sprites\spr_pelletdie</sprite>
     <sprite>sprites\spr_ak47</sprite>
     <sprite>sprites\spr_pconcept1</sprite>
+    <sprite>sprites\spr_hearts</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -35,6 +36,7 @@
     <object>objects\obj_armpiv1</object>
     <object>objects\obj_armpiv2</object>
     <object>objects\obj_camera</object>
+    <object>objects\obj_heart</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
