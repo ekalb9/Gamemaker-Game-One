@@ -28,6 +28,7 @@
     <sprite>sprites\spr_shell</sprite>
     <sprite>sprites\spr_hearts</sprite>
     <sprite>sprites\spr_spark</sprite>
+    <sprite>sprites\spr_inventory</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
