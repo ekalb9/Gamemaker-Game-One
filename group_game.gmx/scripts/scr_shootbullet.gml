@@ -4,7 +4,7 @@ for (i = 0; i < shotcount; i++)
 {
 b = instance_create(x+lengthdir_x(offset,image_angle),y+lengthdir_y(offset,image_angle),bullettype)
 f = instance_create(x+lengthdir_x(offset+16,image_angle),y+lengthdir_y(offset+16,image_angle),flashtype)
-f.depth = depth
+f.depth = depth-1
 b.image_angle = image_angle + random_range(-spread *i,spread * i)
 b.spd = bulletspeed
 b.damage = damage

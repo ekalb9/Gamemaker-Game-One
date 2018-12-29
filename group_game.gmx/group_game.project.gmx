@@ -28,6 +28,7 @@
     <sprite>sprites\spr_shell</sprite>
     <sprite>sprites\spr_hearts</sprite>
     <sprite>sprites\spr_spark</sprite>
+    <sprite>sprites\spr_sparkparticle</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -46,6 +47,7 @@
     <object>objects\obj_camera</object>
     <object>objects\obj_flash</object>
     <object>objects\obj_hearts</object>
+    <object>objects\obj_spark</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
