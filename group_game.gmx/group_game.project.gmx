@@ -49,6 +49,7 @@
     <object>objects\obj_flash</object>
     <object>objects\obj_hearts</object>
     <object>objects\obj_spark</object>
+    <object>objects\obj_inventory</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
