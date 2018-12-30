@@ -35,6 +35,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_shootbullet.gml</script>
+    <script>scripts\scr_sparks.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_wall</object>

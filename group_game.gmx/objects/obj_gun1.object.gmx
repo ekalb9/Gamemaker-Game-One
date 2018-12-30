@@ -45,7 +45,7 @@ sound = snd_powerfulshot
 recoil_distance = 5
 recoil_offset = 0
 flashtype = obj_flash
-push = 15
+push = 20
 </string>
           </argument>
         </arguments>
