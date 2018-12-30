@@ -54,11 +54,11 @@ y = view_yview + 325
 draw_self()
 //slot 1
 if instance_exists(obj_gun2) {
-    draw_sprite(spr_ak2, 0 ,view_xview + 42,view_yview + 325)
+    draw_sprite(obj_gun1.sprite_index, 0 ,view_xview + 42,view_yview + 325)
 }
 //slot 2
 if instance_exists(obj_gun1) {
-    draw_sprite(spr_gun, 0 ,view_xview + 72,view_yview + 325)
+    draw_sprite(obj_gun2.sprite_index, 0 ,view_xview + 72,view_yview + 325)
 }
 </string>
           </argument>
