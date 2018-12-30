@@ -26,12 +26,9 @@ released = true
 time = 0
 
 obj_player.push = push
-obj_player.pushdir = image_angle
+obj_player.vspeed -= lengthdir_y(push,image_angle)
+obj_player.hspeed -= lengthdir_x(push,image_angle)
 
-with obj_player
-{
-
-}
 
 
 }
