@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>-1</persistent>
-  <parentName>self</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -41,6 +41,9 @@ xspd = 0
 frick = 5
 //Combat variables
 global.hp = 6
+global.wepno1 = 1
+global.wepno2 = 2
+
 </string>
           </argument>
         </arguments>
@@ -143,6 +146,12 @@ vspeed = 0
 hspeed = 0
 }
 
+if place_meeting(x,y,obj_wall)
+{
+x = xprevious
+y = yprevious
+}
+
  
 //Increment the current x and y coords by the vertical and horizontal speed
 x+=hsp
@@ -159,6 +168,32 @@ friction = 1
 else
 friction = 0.2
 
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_explosion">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>hit=instance_place(x,y,obj_explosion)
+motion_set(point_direction(x,y,hit.x,hit.y),-hit.force)
 
 
 </string>

@@ -8,6 +8,7 @@
     <sound>sound\snd_akshot</sound>
     <sound>sound\snd_shot</sound>
     <sound>sound\snd_powerfulshot</sound>
+    <sound>sound\explosion</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_wall</sprite>
@@ -30,12 +31,24 @@
     <sprite>sprites\spr_spark</sprite>
     <sprite>sprites\spr_inventory</sprite>
     <sprite>sprites\spr_sparkparticle</sprite>
+    <sprite>sprites\spr_smg</sprite>
+    <sprite>sprites\spr_handcannon</sprite>
+    <sprite>sprites\spr_bigbullet</sprite>
+    <sprite>sprites\spr_minigun</sprite>
+    <sprite>sprites\spr_rocket</sprite>
+    <sprite>sprites\spr_rocketlauncher</sprite>
+    <sprite>sprites\spr_exmask</sprite>
+    <sprite>sprites\spr_airgun</sprite>
+    <sprite>sprites\spr_airgunbullet</sprite>
+    <sprite>sprites\spr_puff</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_shootbullet.gml</script>
     <script>scripts\scr_sparks.gml</script>
+    <script>scripts\scr_casing.gml</script>
+    <script>scripts\scr_chooseweapon.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_wall</object>
@@ -43,14 +56,20 @@
     <object>objects\obj_gun1</object>
     <object>objects\obj_gun2</object>
     <object>objects\obj_bullet</object>
+    <object>objects\obj_airgunbullet</object>
+    <object>objects\obj_rocket</object>
     <object>objects\obj_pellet</object>
     <object>objects\obj_armpiv1</object>
     <object>objects\obj_armpiv2</object>
     <object>objects\obj_camera</object>
     <object>objects\obj_flash</object>
+    <object>objects\obj_puff</object>
     <object>objects\obj_hearts</object>
     <object>objects\obj_spark</object>
     <object>objects\obj_inventory</object>
+    <object>objects\obj_casing</object>
+    <object>objects\obj_smoke</object>
+    <object>objects\obj_explosion</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

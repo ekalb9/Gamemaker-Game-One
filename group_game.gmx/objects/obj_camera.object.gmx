@@ -36,7 +36,7 @@ wdisplay = display_get_width()
 hdisplay = display_get_height()
 found_display = false
 
-zoom = 3
+zoom = 2
 
 while found_display = false
 {
@@ -89,12 +89,12 @@ move_towards_point(mouse_x,mouse_y,0)
 x2 = obj_player.x + lengthdir_x(min(40,distance_to_point(mouse_x,mouse_y)),direction);
 y2= obj_player.y + lengthdir_y(min(40,distance_to_point(mouse_x,mouse_y)),direction);
 
-x+=(x2-x)/25;
-y+=(y2-y)/25;
-
+x+=(x2-x)/8;
+y+=(y2-y)/8;
 
 view_xview=-(view_wview)/2+x;
 view_yview=-(view_hview)/2+y;
+
 
 view_xview=clamp(view_xview,0,room_width-view_wview);
 view_yview=clamp(view_yview,0,room_height-view_hview);

@@ -47,6 +47,10 @@ recoil_offset = 0
 time = 0
 flashtype = obj_flash
 push = 15
+shelltype = spr_casing
+bulletsprite = spr_bullet2
+
+global.wepno2 = 4
 </string>
           </argument>
         </arguments>
@@ -112,6 +116,10 @@ else
 {
 recoil_offset = 0
 }
+
+scr_chooseweapon(global.wepno2)
+
+sprite_index = sprite
 </string>
           </argument>
         </arguments>
